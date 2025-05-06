@@ -14,7 +14,6 @@ public class LevelOrderMultiThread {
 
         void addEdge(int u, int v) {
             adj.computeIfAbsent(u, k -> new ArrayList<>()).add(v);
-            adj.computeIfAbsent(v, k -> new ArrayList<>()).add(u);
         }
 
         List<Integer> getNeighbors(int node) {
